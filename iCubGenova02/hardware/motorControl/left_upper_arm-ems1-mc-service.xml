@@ -37,12 +37,20 @@
                     0.00    0.00    1.625   0.00
                     0.00    0.00    0.00    1.00   
                 </param>
+
+            <!-- 0.615 = alfa = 40/65 --> 
+                <param name ="matrixM2J"> 
+                    1.000   0.000   0.000   0.000
+                    1.000   0.615   0.000   0.000
+                    0.000  -0.615   0.615   0.000
+                    0.000   0.000   0.000   1.000   
+                </param>
                
                 <param name ="matrixE2J">  
-                    1.00    0.00    0.00    0.00
-                    0.00    1.00    0.00    0.00
-                    0.00    0.00    1.00    0.00
-                    0.00    0.00    0.00    1.00   
+                    1.000   0.000   0.000   0.000   0.000   0.000
+                    0.000   1.000   0.000   0.000   0.000   0.000
+                    0.000   0.000   1.000   0.000   0.000   0.000
+                    0.000   0.000   0.000   1.000   0.000   0.000   
                 </param>
                 
             </group>                
@@ -66,13 +74,22 @@
                     <param name="position">         eomc_pos_none       none                none            none        </param>
                 </group> 
  
+            <param name="joint2set">                   0                   0                   0               1        </param>  
+
             </group>    
             
-            <group name="JOINTSETS">
-
-                <param name="list">                 0                   0                   0               1           </param> 
-
-            </group>
+             <group name="JOINTSETS_CFG">     <!-- JOINTSET NUMBER      0                  1           -->
+                    <param name="canDoTrqCtrl">                         1                  1               </param>
+                    <param name="useMotorSpeedFbk">                     0                  0               </param>
+                    <param name="pidOutputType">                        pwm                pwm             </param>
+            </group> 
+            
+            
+            <group name="JOINTSETS_CONSTRAINTS"><!-- JOINTSET NUMBER      0                 1          -->
+                    <param name="name">                                  none            none         </param>
+                    <param name="param1">                                0                  0         </param>
+                    <param name="param2">                                0                  0         </param>
+            </group> 
             
         </group>
            
