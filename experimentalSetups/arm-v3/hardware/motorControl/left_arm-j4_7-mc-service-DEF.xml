@@ -28,7 +28,6 @@
                     <param name="Resolution">       0                   -4096               4096                65535                   </param>      
                 </group>        
             
-       
                 <group name="ENCODER2">
                     <param name="type">             qenc                qenc                qenc                none                    </param>
                     <param name="port">             CONN:P2             CONN:P3             CONN:P4             CONN:none               </param>

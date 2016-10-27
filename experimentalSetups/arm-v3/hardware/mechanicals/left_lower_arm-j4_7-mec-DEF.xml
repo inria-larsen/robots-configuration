@@ -24,6 +24,7 @@
         <param name="HasHallSensor">            0                0               0              1               </param>
         <param name="HasRotorEncoder">          1                1               1              0               </param>
         <param name="HasRotorEncoderIndex">     0                0               0              0               </param>
+        <param name="HasSpeedEncoder">          0                0               0              0               </param> <!-- not mandatory -->
         <param name="RotorIndexOffset">         0                0               0              0               </param>
         <param name="MotorPoles">               1                1               1              1               </param>
     </group>
@@ -59,7 +60,7 @@
     </group>
     
     <gourp name="JOINTSET_CFG"> 
-        <param name= "num"> 3</param>
+        <param name= "numberofsets"> 3</param>
          <group name="JOINTSET_0">
                     <param name="listofjoints">  0  </param>
                     <param name="costraint">                                  cerhand            </param>
