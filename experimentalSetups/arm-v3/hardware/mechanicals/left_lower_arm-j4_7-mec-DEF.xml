@@ -59,7 +59,7 @@
         </param>
     </group>
     
-    <gourp name="JOINTSET_CFG"> 
+    <group name="JOINTSET_CFG"> 
         <param name= "numberofsets"> 3</param>
          <group name="JOINTSET_0">
                     <param name="listofjoints">  0  </param>
@@ -80,11 +80,5 @@
                     <param name="param2">                                0                                     </param>
             </group> 
     <group>  
- 
-    
-    <group name="TIMEOUTS">
-        <param name="Velocity">                  100         100         100         100         </param>
-        <param name="Torque">                  100         100         100         100         </param>
-    </group>
-
+     
 </params>

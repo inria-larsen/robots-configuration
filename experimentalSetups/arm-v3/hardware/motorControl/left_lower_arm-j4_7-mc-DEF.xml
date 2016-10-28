@@ -29,6 +29,11 @@
             <param name="damping">              0.0         0.0     0.0         0.0             </param>
         </group>
 
+        <group name="TIMEOUTS">
+            <param name="Velocity">                  100         100         100         100         </param>
+            <param name="Torque">                  100         100         100         100         </param>
+        </group>
+
         <group "CONTROL">
            <param name="POSITION_CONTROL">           POSITION_CONTROL_DI_TIPO1_INGRESSO_POS_USCITA_VEL_E_2FOC_FA_VEL        </param  > 
            <param name="VELOCITY_CONTROL">           VECLOITY_2    VECLOITY_2  VECLOITY_2   VECLOITY_XXXX     </param> 
