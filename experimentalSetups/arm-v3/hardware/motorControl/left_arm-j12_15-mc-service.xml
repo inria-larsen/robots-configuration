@@ -51,23 +51,9 @@
                     <param name="position">         none                atmotor             atmotor             atmotor                 </param>
                     <param name="resolution">       40                  40                  40                  40                      </param>
                 </group>
-                <param name="joint2set">                 0                   1                   2                   3                       </param>   
-            </group>    
-            
-            
 
-            <group name="JOINTSETS_CFG">       <!-- JOINTSET NUMBER      0                  1           2           3-->
-                    <param name="canDoTrqCtrl">                         0                  1            1           0   </param>
-                    <param name="useMotorSpeedFbk">                     1                  0            1           0   </param>
-                    <param name="pidOutputType">                        vel                pwm          iqq         pwm </param>
-            </group> 
-            
-            
-            <group name="JOINTSETS_CONSTRAINTS"><!-- JOINTSET NUMBER      0                  1          2 -->
-                    <param name="name">                                  cerhand            none        eomc_jsetconstraint_trifid trifid</param>
-                    <param name="param1">                                1                  0           100.0                       40.4</param>
-                    <param name="param2">                                0                  0           3                           80.8</param>
-            </group> 
+            </group>    
+
         </group>
            
     </group>

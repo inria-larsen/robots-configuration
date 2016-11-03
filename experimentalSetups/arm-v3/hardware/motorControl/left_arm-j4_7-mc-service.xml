@@ -26,7 +26,7 @@
                     <param name="type">             none                aea                 aea                 absanalog               </param>  
                     <param name="port">             CONN:P2             CONN:P10            CONN:P11            CONN:P5                 </param>
                     <param name="position">         none                atjoint             atjoint             atjoint                 </param> 
-                    <param name="resolution">       0                   -4096               4096                65535                   </param> 
+                    <param name="resolution">       1                   -4096               4096                65535                   </param> 
                 </group>        
                 
                 <group name="ENCODER2">
@@ -35,23 +35,8 @@
                     <param name="position">         atmotor             atmotor             atmotor             none                    </param>
                     <param name="resolution">       2048                1600                1600                1                       </param>
                 </group> 
-             <param name="joint2set">                  0                   1                   1                   2                       </param>  
             </group>    
-
-           
-
-            <group name="JOINTSETS_CFG">       <!-- JOINTSET NUMBER      0                  1           2-->
-                    <param name="canDoTrqCtrl">                         0                  1            1       </param>
-                    <param name="useMotorSpeedFbk">                     1                  0            1       </param>
-                    <param name="pidOutputType">                        vel                pwm          iqq     </param>
-            </group> 
-            
-            
-            <group name="JOINTSETS_CONSTRAINTS"><!-- JOINTSET NUMBER      0                  1          2 -->
-                    <param name="name">                                  cerhand            none        eomc_jsetconstraint_trifid </param>
-                    <param name="param1">                                1                  0           100.3                      </param>
-                    <param name="param2">                                0                  0           3                          </param>
-            </group> 
+          
         </group>
            
     </group>
