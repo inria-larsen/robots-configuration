@@ -15,7 +15,7 @@
         <param name="Encoder">                  182.044          182.044         182.044        182.044       </param>
         <param name="Gearbox_M2J">              100               159             159            256             </param>
         <param name="Gearbox_E2J">              100               159             159            256             </param>
-        <param name="useMotorSpeedFbk">         1                0               1               1              </param>
+        <param name="useMotorSpeedFbk">         1                0               1               1              </param> <!-- usa il fbk del motore e non quello del giunto per calcolare la vel --> 
         <param name="Verbose">                  0                                                               </param>
     </group>
     
