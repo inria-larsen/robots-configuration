@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE robot PUBLIC "-//YARP//DTD robotInterface 1.0//EN" "http://www.icub.org/DTD/robotInterfaceV1.0.dtd">
+
+    <robot name="iCubGenova04" build="1" portprefix="icub">
+    <params file="hardware/electronics/pc104.xml" />
+
+    <!--    test report
+            - on 06sep16 tested mc of legs. it is ok, but right j0 vibrates a bit.
+            - on 07sep16 tested ft of legs. device starts and we can read from ports.
+      -->
+
+	<!-- LEFT LEG MC -->
+
+    <devices file="hardware/motorControl/left_upper_leg-ems6-mc.xml" />
+    <devices file="hardware/motorControl/left_lower_leg-ems7-mc.xml" />
+    <devices file="wrappers/motorControl/left_leg-mc_wrapper.xml" /> 
+
+    
+
+    <devices file="calibrators/left_leg-calib.xml" />  
+
+    </robot> 
+
+
+
