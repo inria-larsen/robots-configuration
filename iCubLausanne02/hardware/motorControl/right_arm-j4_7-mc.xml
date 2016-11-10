@@ -1,29 +1,29 @@
- <?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE devices PUBLIC "-//YARP//DTD robotInterface 1.0//EN" "http://www.icub.org/DTD/robotInterfaceV1.0.dtd">
 
 <devices robot="iCubGenova04" build="1">
 
-    <device name="left_arm-j12_15-mc" type="embObjMotionControl">
+    <device name="right_arm-j4_7-mc" type="embObjMotionControl">
     
         <params file="general.xml" />
-        <params file="hardware/electronics/left_arm-j12_15-eln.xml" />
-        <params file="hardware/mechanicals/left_arm-j12_15-mec.xml" />
+        <params file="hardware/electronics/right_arm-j4_7-eln.xml" />
+        <params file="hardware/mechanicals/right_arm-j4_7-mec.xml" />
         
-        <params file="hardware/motorControl/left_arm-j12_15-mc-service.xml" />
+        <params file="hardware/motorControl/right_arm-j4_7-mc-service.xml" />
 
-        <!-- joint number in sub-part           0               1               2               3          -->
-        <!-- joint name                    index-distal   middle-proximal   middle-distal   little-fingers -->     
+        <!-- joint number in sub-part           0               1               2               3              -->
+        <!-- joint name                         "l_wrist_prosup" "l_wrist_pitch" "l_wrist_yaw"  "l_hand_finger" -->     
         <group name="LIMITS">
-            <param name="jntPosMax">              180          90              180             270        </param>
-            <param name="jntPosMin">                0           0                0               0        </param> 
-            <param name="rotorPosMin">         -64000       -1280            -2048           -69120       </param> 
-            <param name="rotorPosMax">           2048       30720            64000             2048       </param>
-            <param name="jntVelMax">                1000        1000            1000           1000       </param>
-            <param name="motorOverloadCurrents">    2000        2000            2000           2000       </param>
-            <param name="motorNominalCurrents">      600         600             600            600        </param>
-            <param name="motorPeakCurrents">        1000        1000            1000           1000        </param>
-            <param name="motorPwmLimit">            3360        3360            3360            3360       </param>
-        </group>
+            <param name="jntPosMax">                90          25              35              60          </param>
+            <param name="jntPosMin">                -90         -80            -15             10          </param> 
+            <param name="rotorPosMax">              0           0               0              0           </param>
+            <param name="rotorPosMin">              0           0               0              0           </param> 
+            <param name="jntVelMax">                1000        1000            1000           1000        </param>
+            <param name="motorOverloadCurrents">    5000        2000            2000           2000       </param>
+            <param name="motorNominalCurrents">     5000         600             600            600        </param>
+            <param name="motorPeakCurrents">        5000        1000            1000           1000        </param>
+            <param name="motorPwmLimit">            3360        3360            3360           3360        </param>
+           </group>
     
 
         <group name="IMPEDANCE">
@@ -31,14 +31,15 @@
             <param name="damping">              0.0         0.0     0.0         0.0             </param>
         </group>
 
+        <!-- ATTENTION: PID VALUES are not safe!!! -->
         <group name="POSITION_CONTROL">
             <param name="controlLaw">       joint_pid_v1                                        </param>    
             <param name="controlUnits">     metric_units                                        </param> 
-            <param name="kp">                  -500.00    500.00      500.00      -200.00      </param>
+            <param name="kp">                200.00      500.00      500.00      500.00        </param>       
             <param name="kd">                   0.0         0.0         0.0         0.0         </param>     
             <param name="ki">                   0.0         0.0         0.0         0.0         </param>       
-            <param name="maxOutput">            3360        3360        3360        3360        </param>  
-            <param name="maxInt">               1500        3360        3360        3360        </param> 
+            <param name="maxOutput">            3360     3360        3360        3360         </param>  
+            <param name="maxInt">               0           0           0           0           </param> 
             <param name="shift">                0           0           0           0           </param>       
             <param name="ko">                   0           0           0           0           </param>  
             <param name="stictionUp">           0           0           0           0           </param> 
