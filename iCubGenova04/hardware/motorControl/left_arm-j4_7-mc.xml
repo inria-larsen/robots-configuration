@@ -45,8 +45,8 @@
 
         <!-- ATTENTION: PID VALUES are not safe!!! -->
         <group name="JOINT_PID_V1">
-	        <param name="pos_controlLaw">       Pid_inPos_outPwm                          </param> 
-            <param name="pos_controlUnits">     metric_units                                        </param> 
+	        <param name="controlLaw">       Pid_inPos_outPwm                          </param> 
+            <param name="controlUnits">     metric_units                                        </param> 
             <param name="pos_kp">                -200.00     -200.00     -200.00      500.00        </param>       
             <param name="pos_kd">                   0.0         0.0         0.0         0.0         </param>     
             <param name="pos_ki">                   0.0         0.0         0.0         0.0         </param>       
