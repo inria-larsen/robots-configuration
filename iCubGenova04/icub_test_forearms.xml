@@ -11,12 +11,6 @@
  
       -->
 
-    <!-- HEAD	-->
-
-    <devices file="./hardware/motorControl/head-j0_1-mc.xml" />  
-    <devices file="./hardware/motorControl/head-j2_5-mc.xml" /> 
-    <devices file="./wrappers/motorControl/head_mc_wrapper.xml" />  
-
 
     <!--LEFT_FOREARM -->
     <devices file="./hardware/motorControl/left_arm-j4_7-mc.xml" />
@@ -54,7 +48,6 @@
 
     <devices file="calibrators/right_forearm-calib.xml" /> 
     <devices file="calibrators/left_forearm-calib.xml" />
-    <devices file="calibrators/head-calib.xml" />
 
     </robot> 
 

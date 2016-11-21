@@ -21,7 +21,7 @@
         <param name="motorNominalCurrents">   4000             4000           4000           4000       </param>
         <param name="motorPeakCurrents">      5000             5000           5000           5000       </param>
         <param name="motorOverloadCurrents"> 15000            15000          15000          15000       </param>
-        <param name="motorPwmLimit">          1000             1000           1000           1000       </param>
+        <param name="motorPwmLimit">          5000             5000           5000           5000       </param>
     </group>
 
 
