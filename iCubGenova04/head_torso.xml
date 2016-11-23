@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE robot PUBLIC "-//YARP//DTD robotInterface 1.0//EN" "http://www.icub.org/DTD/robotInterfaceV1.0.dtd">
+
+    <robot name="iCubGenova04" build="1" portprefix="icub">
+    <params file="hardware/electronics/pc104.xml" />
+
+    <!-- CARTESIANS  --> 
+    
+    <!-- HEAD -->	
+    <devices file="./hardware/motorControl/head-j0_1-mc.xml" />  
+    <devices file="./hardware/motorControl/head-j2_5-mc.xml" /> 
+    <devices file="./wrappers/motorControl/head_mc_wrapper.xml" /> 
+
+    <!-- TORSO --> 
+    <devices file="hardware/motorControl/torso-ems5-mc.xml" />
+    <devices file="wrappers/motorControl/torso-mc_wrapper.xml" /> 
+
+    <!-- LEFT ARM  -->
+
+    <!-- RIGHT ARM -->
+
+    <!-- ANALOG SENSOR FT  -->
+	
+    <!-- VIRTUAL ANALOG SENSORS (WRAPPER ONLY-->
+
+    <!-- ANALOG SENSOR MAIS-->
+    
+    <!-- LEFT LEG -->
+
+    <!-- RIGHT LEG -->
+ 
+    <!-- INERTIAL SENSOR -->
+
+
+    <!--  SKINS  --> 
+
+	
+    <!--  CALIBRATORS   -->
+    <devices file="calibrators/torso-calib.xml" />
+    <devices file="calibrators/head-calib.xml" /> 
+    </robot> 
