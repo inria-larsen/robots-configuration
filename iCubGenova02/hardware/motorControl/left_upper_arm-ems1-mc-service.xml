@@ -66,32 +66,21 @@
                     <param name="type">             eomc_enc_aea        aea                 aea             aea         </param>  
                     <param name="port">             CONN:P6             CONN:P7             CONN:P8         CONN:P9     </param>
                     <param name="position">         eomc_pos_atjoint    atjoint             atjoint         atjoint     </param> 
+                    <param name="resolution">       -4096               -4096               4096            -4096       </param>
+                    <param name="numofnoisebits">      3                3                   3                  3        </param> 
                 </group>        
                 
                 <group name="ENCODER2">
                     <param name="type">             eomc_enc_none       none                none            none        </param>
                     <param name="port">             CONN:none           CONN:none           CONN:none       CONN:none   </param>
                     <param name="position">         eomc_pos_none       none                none            none        </param>
+                    <param name="resolution">       -14400              -14400              -14400          -14400      </param>
+                    <param name="numofnoisebits">      0                0                   0                  0        </param>
                 </group> 
  
-            <param name="joint2set">                   0                   0                   0               1        </param>  
-
-            </group>    
+           </group>    
             
-             <group name="JOINTSETS_CFG">     <!-- JOINTSET NUMBER      0                  1           -->
-                    <param name="canDoTrqCtrl">                         1                  1               </param>
-                    <param name="useMotorSpeedFbk">                     0                  0               </param>
-                    <param name="pidOutputType">                        pwm                pwm             </param>
-            </group> 
-            
-            
-            <group name="JOINTSETS_CONSTRAINTS"><!-- JOINTSET NUMBER      0                 1          -->
-                    <param name="name">                                  none            none         </param>
-                    <param name="param1">                                0                  0         </param>
-                    <param name="param2">                                0                  0         </param>
-            </group> 
-            
-        </group>
+         </group>
            
     </group>
     
