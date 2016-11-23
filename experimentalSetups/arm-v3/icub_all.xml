@@ -6,9 +6,9 @@
     <!-- LEFT ARM-V3 -->
     
     <!-- MOTOR CONTROLLERS -->  
-    <devices file="./hardware/motorControl/left_lower_arm-j4_7-mc.xml" />
-    <devices file="./hardware/motorControl/left_lower_arm-j8_11-mc.xml" /> 
-    <devices file="./hardware/motorControl/left_lower_arm-j12_15-mc.xml" />
+    <devices file="./hardware/motorControl/left_arm-j4_7-mc.xml" />
+    <devices file="./hardware/motorControl/left_arm-j8_11-mc.xml" /> 
+    <devices file="./hardware/motorControl/left_arm-j12_15-mc.xml" />
 
     <devices file="./wrappers/motorControl/left_arm-mc_wrapper.xml" /> 
 

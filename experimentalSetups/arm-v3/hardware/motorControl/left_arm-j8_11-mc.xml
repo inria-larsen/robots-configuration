@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE devices PUBLIC "-//YARP//DTD robotInterface 1.0//EN" "http://www.icub.org/DTD/robotInterfaceV1.0.dtd">
 
-<devices robot="iCubExpArmV3" build="1">
+<devices robot="iCubGenova04" build="1">
 
-    <device name="left_lower_arm-j8_11-mc" type="embObjMotionControl">
+    <device name="left_arm-j8_11-mc" type="embObjMotionControl">
     
         <params file="general.xml" />
-        <params file="hardware/electronics/left_lower_arm-j8_11-eln.xml" />
-        <params file="hardware/mechanicals/left_lower_arm-j8_11-mec.xml" />
-        <params file="hardware/motorControl/left_arm-j8_11-mc-service.xml"/>
+        <params file="hardware/electronics/left_arm-j8_11-eln.xml" />
+        <params file="hardware/mechanicals/left_arm-j8_11-mec.xml" />
+        
+        <params file="hardware/motorControl/left_arm-j8_11-mc-service.xml" /> 
 
         <!-- joint number in sub-part             0              1               2                3        -->
         <!-- joint name               "l_thumb_oppose" "l_thumb_proximal" "l_thumb_distal" "l_index_proximal" -->
         <group name="LIMITS">
             <param name="jntPosMax">                90          90             180              90           </param>
             <param name="jntPosMin">                10          0              0                0            </param>
-            <param name="rotorPosMin">              0           0              0             0            </param> 
-            <param name="rotorPosMax">              0           0             0             0           </param>
+            <param name="rotorPosMin">              0        -5120           -5120            -5120            </param> 
+            <param name="rotorPosMax">              0        28160           61440             32000          </param>
             <param name="jntVelMax">                1000        1000           1000             1000         </param>
             <param name="motorOverloadCurrents">    2000        2000            2000           2000       </param>
             <param name="motorNominalCurrents">      600         600             600            600        </param>
@@ -30,22 +31,20 @@
             <param name="damping">              0.0         0.0     0.0         0.0             </param>
         </group>
 
-
-        <group name="TIMEOUT">
-            <param name="velocity">                  100         100         100         100         </param>
+        <group name="TIMEOUTS">
+            <param name="velocity">             100         100           100           100	</param>
         </group>
 
 
-        <group name="CONTROLS">
-           <param name="positionControl">           POS_PID_VALE   POS_PID_VALE    POS_PID_VALE    POS_PID_VALE    </param> 
+     <group name="CONTROLS">
+           <param name="positionControl">           JOINT_PID_V1   JOINT_PID_V1    JOINT_PID_V1    JOINT_PID_V1    </param> 
            <param name="velocityControl">           none           none            none            none            </param> 
            <param name="torqueControl">             none           none            none            none            </param> 
+           <param name="currentPid">                none           none            none            none            </param>
         </group>
 
-
-        <!-- ATTENTION: PID VALUES are not safe!!! -->
-        <group name="POS_PID_VALE">
-            <param name="controlLaw">       Pid_inPos_outPwm                                    </param>    
+	<group name="JOINT_PID_V1">
+	    <param name="controlLaw">    Pid_inPos_outPwm                          </param> 
             <param name="controlUnits">     metric_units                                        </param> 
             <param name="pos_kp">               -200.00       200.00      500.00       500.00      </param>       
             <param name="pos_kd">                   0.0         0.0         0.0         0.0         </param>     
@@ -58,24 +57,6 @@
             <param name="pos_stictionDwn">          0           0           0           0           </param> 
             <param name="pos_kff">                  0           0           0           0           </param> 
         </group>
-    
-        <!-- <group name="TORQUE_CONTROL">
-            <param name="controlLaw">       motor_pid_with_friction_v1                   </param>    
-            <param name="controlUnits">     metric_units                                 </param> 
-            <param name="kp">                   0           0           0           0    </param>    
-            <param name="kd">                   0           0           0           0    </param>        
-            <param name="ki">                   0           0           0           0    </param>        
-            <param name="maxOutput">            0           0           0           0    </param>       
-            <param name="maxInt">               0           0           0           0    </param>       
-            <param name="shift">                0           0           0           0    </param>        
-            <param name="ko">                   0           0           0           0    </param>        
-            <param name="stictionUp">           0           0           0           0    </param>        
-            <param name="stictionDwn">          0           0           0           0    </param>        
-            <param name="kff">                  0           0           0           0    </param>    
-            <param name="kbemf">                0           0           0           0    </param>     
-            <param name="filterType">           0           0           0           0    </param>            
-            <param name="ktau">                 0           0           0           0    </param>   
-        </group> -->
        
     </device> 
     
