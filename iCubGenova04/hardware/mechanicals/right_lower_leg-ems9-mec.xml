@@ -10,8 +10,9 @@
         <param name="AxisType">       "revolute"    "revolute"     </param>
         <param name="Encoder">        182.044        182.044       </param>
         <param name="Gearbox_M2J">   -100.00        -100.00        </param>
+        <param name="Gearbox_E2J">      1.00           1.00        </param>
         <param name="MotorType">     "BLL_MOOG"   "BLL_MOOG"       </param>
-        <param name="useMotorSpeedFbk"> 0             0            </param>
+        <param name="useMotorSpeedFbk"> 1             1            </param>
         <param name="Verbose">   0   </param>
     </group>
 
