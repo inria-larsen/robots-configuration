@@ -12,8 +12,8 @@
         <param name="AxisMap">                  0                1               2              3               </param>   <!-- joint as effectively mapped onto the hw of the board -->
         <param name="Encoder">                  182.044          182.044         182.044        182.044       </param>
         <param name="Gearbox_M2J">             -100             159             159            256             </param>
-        <param name="Gearbox_E2J">   	          1             1             1              1           </param>
-        <param name="useMotorSpeedFbk">           0             0             0              0           </param>
+        <param name="Gearbox_E2J">   	          1             1             1              1                  </param>
+        <param name="useMotorSpeedFbk">           1             1             1              1                 </param>
         <param name="Verbose">                  0                                                               </param>
     </group>
 
