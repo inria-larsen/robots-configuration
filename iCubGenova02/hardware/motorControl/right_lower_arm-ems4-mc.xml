@@ -51,7 +51,7 @@
          <param name="pos_stictionUp">  0             0             0             0      0             0             0             0             0             0             0             0        </param>
          <param name="pos_stictionDwn"> 0             0             0             0      0             0             0             0             0             0             0             0        </param>
          <param name="pos_kff">         0             0             0             0      0             0             0             0             0             0             0             0        </param>
-     </group></group>
+     </group>
 	
 	<group name="MPID_WITH_FRICTION_V1">
 	    <param name="controlLaw">          joint_pid_v1 </param>
