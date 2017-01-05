@@ -31,8 +31,8 @@
 <param name="startupPosThreshold">    2          2          2          2           90   90     90      90   90    90     90    90    90     90     90    90      </param>
 </group>
 
-     <!-- REmoved j 7 because it has problem with encoder  <param name="CALIB_ORDER">(0 1 2 3) (4) (5 6 7) (8 9 11 13) (10 12 14 15) </param> -->
- <param name="CALIB_ORDER">(0 1 2 3) (4) (5 6 ) (8 9 11 13) (10 12 14 15) </param>
+     <!-- REmoved j 7 because it has problem with encoder and 15 <param name="CALIB_ORDER">(0 1 2 3) (4) (5 6 7) (8 9 11 13) (10 12 14 15) </param> -->
+ <param name="CALIB_ORDER">(0 1 2 3) (4) (5 6 ) (8 9 11 13) (10 12 14) </param>
 
 		<action phase="startup" level="10" type="calibrate">
 		    <param name="target">left_arm_mc_wrapper</param>
