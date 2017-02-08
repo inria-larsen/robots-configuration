@@ -8,34 +8,33 @@
         <param name="AxisMap">               2             0             1           </param>   
         <param name="AxisName">      "torso_yaw" "torso_roll" "torso_pitch"          </param>
         <param name="AxisType">       "revolute"    "revolute" "revolute"            </param>
-        <param name="Encoder">         182.044       182.044       182.044           </param>
-        <param name="Gearbox_M2J">     -100.00       -100.00      -100.00            </param>
-        <param name="Gearbox_E2J">      1             1             1                </param>
+        <param name="Encoder">         182.044       182.044      182.044            </param>
+        <param name="Gearbox_M2J">    -100.00       -100.00      -100.00             </param>
+        <param name="Gearbox_E2J">   	1             1             1                </param>
         <param name="useMotorSpeedFbk"> 1             1             1                </param>
         <param name="MotorType">       "BLL_MOOG"     "BLL_MOOG"   "BLL_KOLLM"       </param>
-        <param name="Verbose">		0	</param>
+        <param name="Verbose">    0    </param>
     </group>
 
     <group name="2FOC">
-        <param name="HasHallSensor">         1           1             1            </param>
-        <param name="HasTempSensor">         0           0             0            </param>
-        <param name="HasRotorEncoder">       1           1             1            </param>
-        <param name="HasRotorEncoderIndex">  0           0             0            </param>
-        <param name="HasSpeedEncoder">       0           0             0            </param>
-        <param name="RotorIndexOffset">      0           0             0            </param>
-        <param name="MotorPoles">            8           8             8            </param>
-    </group>
-    
-    
-   <group name="COUPLINGS">
+        <param name="HasHallSensor">         1             1             1           </param>
+        <param name="HasTempSensor">         0             0             0           </param>
+        <param name="HasRotorEncoder">       1             1             1           </param>
+        <param name="HasRotorEncoderIndex">  0             0             0           </param>
+        <param name="HasSpeedEncoder">       0             0             0           </param>
+        <param name="RotorIndexOffset">      0             0             0           </param>
+        <param name="MotorPoles">            8             8             8           </param>
+   </group>
 
-        <param name ="matrixJ2M">
+    <group name="COUPLINGS"> 
+                                
+        <param name ="matrixJ2M"> 
             0.50   -0.50    0.00    0.00
             0.50    0.50    0.00    0.00
             0.00    0.00    1.00    0.00
             0.00    0.00    0.00    1.00   
         </param>
-        
+
         <!-- alfa = 22.0f/80.0f = 0.275; 
             2*alfa = 0.55        --> 
         <param name ="matrixM2J">
@@ -54,7 +53,9 @@
 
     </group>
 
-    <group name="JOINTSET_CFG">
+
+
+    <group name="JOINTSET_CFG"> 
         <param name= "numberofsets"> 1 </param>
         <group name="JOINTSET_0">
             <param name="listofjoints">  0 1 2         </param>
@@ -63,4 +64,5 @@
             <param name="param2">        0             </param>
         </group>
     </group>
+
 </params>
