@@ -40,7 +40,7 @@
 
                 <group name="BROADCASTPOLICY">
                     <!-- 2. eOmn_serv_config_data_mc_mc4_t contains this field, but the object EOtheMC4boards uses its own default values (position status print pidvalues) -->              
-                    <param name="enable">    eomc_mc4broadcast_position    status  print   pidvalues     </param>
+                    <param name="enable">    position    status  print   pidvalues     </param>
                 </group>
 
             </group>     
