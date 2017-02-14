@@ -39,7 +39,7 @@
 
 
 	 <group name="JOINT_PID_V1">
-	  <param name="controlLaw">       joint_pid_v1 </param>
+	  <param name="controlLaw">     Pid_inPos_outPwm  </param>
          <param name="controlUnits">     machine_units               </param>
          <param name="pos_kp">          -200          1000          -1000         200   -500          -8000         8000          -8000         -8000         -8000         8000          -1200    </param>
          <param name="pos_kd">          -1000         10000         -10000        200   -32000        -32000        32000         -32000        -32000        -32000        32000         -12500   </param>
@@ -54,7 +54,7 @@
      </group>
 	
 	<group name="MPID_WITH_FRICTION_V1">
-	    <param name="controlLaw">          joint_pid_v1 </param>
+	    <param name="controlLaw">         Pid_inTrq_outPwm  </param>
         <param name="controlUnits">        machine_units               </param>
         <param name="trq_kp">               80      0      0      0      0      0      0      0      0      0      0      0    </param>
         <param name="trq_kd">                0      0      0      0      0      0      0      0      0      0      0      0    </param>
