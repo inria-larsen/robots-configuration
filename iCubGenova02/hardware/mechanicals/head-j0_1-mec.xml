@@ -12,7 +12,7 @@
         <!-- joint name                         neck-pitch     neck-roll   -->         
 
         <param name="AxisMap">                  0               1               </param>    
-        <param name="AxisName">              "neck-pitch"       "neck-roll"     </param>
+        <param name="AxisName">              "neck_pitch"       "neck_roll"     </param>
         <param name="AxisType">                "revolute"    "revolute"         </param>
         <param name="Encoder">                  182.044         182.044         </param>
         <param name="Gearbox_M2J">              161.68          161.68          </param>
