@@ -66,9 +66,8 @@
     <devices file="hardware/motorControl/right_lower_leg-ems9-mc.xml" />
     <devices file="wrappers/motorControl/right_leg-mc_wrapper.xml" />	
  
-    <!-- INERTIAL SENSOR 
+    <!-- INERTIAL SENSOR--> 
     <devices file="hardware/inertial.xml" />
--->
     <!--  SKINS --> 
 
     <devices file="wrappers/skin/left_arm-skin_wrapper.xml" />
