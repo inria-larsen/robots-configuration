@@ -15,7 +15,16 @@
         <param name="MotorType">       "BLL_MOOG"     "BLL_MOOG"   "BLL_MOOG"    "BLL_MOOG"    </param>
         <param name="Verbose">0</param>
     </group>
-
+    
+    
+    <group name="LIMITS">
+        <param name="hardwareJntPosMax">   85            85            70            0     </param>
+        <param name="hardwareJntPosMin">  -30           -12           -70         -100     </param>
+        <param name="rotorPosMin">          0             0             0            0     </param> 
+        <param name="rotorPosMax">          0             0             0            0     </param>
+    </group>
+    
+    
     <group name="2FOC">
         <param name="HasHallSensor">         1           1             1             1      </param>
         <param name="HasTempSensor">         0           0             0             0      </param>

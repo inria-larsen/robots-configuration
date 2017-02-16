@@ -6,7 +6,7 @@
       each line of the encoder -->
 
  
-<params robot="iCubGenova04" build="1">
+<params robot="iCubGenova02" build="1">
     <group name="GENERAL">
         <param name="MotioncontrolVersion">  3 </param>
         <param name="Joints"> 4 </param> <!-- the number of joints of the robot part -->
@@ -22,6 +22,13 @@
         <param name="useMotorSpeedFbk">           1             1                 1              1                 </param>
 
         <param name="Verbose">  0   </param>
+    </group>
+    
+    <group name="LIMITS">       
+        <param name="hardwareJntPosMin">          -45         -30         -45         0           </param> 
+        <param name="hardwareJntPosMax">          +45         +30         +45         +45         </param>
+        <param name="rotorPosMin">                 0           0           0           0          </param> 
+        <param name="rotorPosMax">                 0           0           0           0          </param>
     </group>
 
     <group name="COUPLINGS"> 
