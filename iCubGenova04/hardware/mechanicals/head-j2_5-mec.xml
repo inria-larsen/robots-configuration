@@ -14,7 +14,7 @@
         <!-- joint number in sub-part           0             1               2               3           -->
         <!-- joint name                         neck-yaw       eyes-tilt       eyes-vers       eyes-verg   -->     <!-- j2 is right-eye, j3 is left-eye -->
         <param name="AxisMap">                  0              1               2               3                   </param> 
-        <param name="AxisName">                "neck-yaw"      "eyes-tilt"     "eyes-vers"   "eyes-verg"           </param>
+        <param name="AxisName">                "neck_yaw"      "eyes_tilt"     "eyes_vers"   "eyes_verg"           </param>
         <param name="AxisType">                "revolute"    "revolute"         "revolute"    "revolute"           </param>
         <param name="Encoder">                  182.044        182.044         182.044         182.044             </param>   
         <param name="Gearbox_M2J">              100             -141            50              50                 </param>
@@ -22,6 +22,13 @@
         <param name="useMotorSpeedFbk">           1             1                 1              1                 </param>
 
         <param name="Verbose">  0   </param>
+    </group>
+    
+    <group name="LIMITS">       
+        <param name="hardwareJntPosMin">          -45         -30         -45         0           </param> 
+        <param name="hardwareJntPosMax">          +45         +30         +45         +45         </param>
+        <param name="rotorPosMin">                 0           0           0           0          </param> 
+        <param name="rotorPosMax">                 0           0           0           0          </param>
     </group>
 
     <group name="COUPLINGS"> 

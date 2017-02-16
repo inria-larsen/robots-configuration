@@ -20,6 +20,13 @@
         <param name="useMotorSpeedFbk">           1             1               </param>
         <param name="Verbose">   0    </param>
     </group>
+    
+    <group name="LIMITS">
+        <param name="hardwareJntPosMin">      -30         -20         </param> 
+        <param name="hardwareJntPosMax">      +22         +20         </param>
+        <param name="rotorPosMin">             0           0           </param> 
+        <param name="rotorPosMax">             0           0           </param>
+    </group>
 
      <group name="COUPLINGS"> 
             
