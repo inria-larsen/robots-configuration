@@ -1,4 +1,4 @@
-set(appname iCubNancy01)
+set(appname iCubNancy01Resibots)
 
 set(scripts icub_all.xml yarprobotinterface.ini general.xml iKinGazeCtrl.ini icubEyes.ini pf3dTracker.ini cartesianSolver.ini)
 
